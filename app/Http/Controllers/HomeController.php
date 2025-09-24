@@ -11,10 +11,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -23,6 +23,40 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('welcome');
+    }
+    public function macro()
+    {
+        return view('photographer');
+    }
+
+    // Outreach & Talks page
+    public function outreach()
+    {
+        return view('outreach');
+    }
+
+    // Publications page
+    public function publications()
+    {
+        return view('publications');
+    }
+
+    // CV / Downloads page
+    public function cv()
+    {
+        return view('cv');
+    }
+
+    // Teaching page
+    public function teaching()
+    {
+        return view('teaching');
+    }
+
+    // Blog page
+    public function blog()
+    {
+        return view('blog');
     }
 }

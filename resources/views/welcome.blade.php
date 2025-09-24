@@ -1,77 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Photographer</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <script src="{{ asset('js/my.js') }}" defer></script>
+@extends('layouts.home') <!-- your master layout with header & footer -->
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+@section('content')
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <!-- WOW.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-</head>
-
-<body>
-
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="logo">My Portfolio</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-text animate__animated animate__fadeInUp">
-            <h1>Capturing Moments</h1>
-            <p>Travel Photography Around the World</p>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section class="gallery" id="portfolio">
-        <h2 class="wow animate__animated animate__fadeInDown">Portfolio</h2>
-        <div class="grid">
-            <div class="grid-item wow animate__animated animate__zoomIn"><img src="https://picsum.photos/400/300?1"
-                    alt=""></div>
-            <div class="grid-item wow animate__animated animate__zoomIn" data-wow-delay="0.2s"><img
-                    src="https://picsum.photos/400/300?2" alt=""></div>
-            <div class="grid-item wow animate__animated animate__zoomIn" data-wow-delay="0.4s"><img
-                    src="https://picsum.photos/400/300?3" alt=""></div>
-            <div class="grid-item wow animate__animated animate__zoomIn"><img src="https://picsum.photos/400/300?4"
-                    alt=""></div>
-            <div class="grid-item wow animate__animated animate__zoomIn" data-wow-delay="0.2s"><img
-                    src="https://picsum.photos/400/300?5" alt=""></div>
-            <div class="grid-item wow animate__animated animate__zoomIn" data-wow-delay="0.4s"><img
-                    src="https://picsum.photos/400/300?6" alt=""></div>
-        </div>
-    </section>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="about-text wow animate__animated animate__fadeInLeft">
             <h2>About Me</h2>
             <p>I’m a travel photographer passionate about capturing unique stories through my lens.
-                From landscapes to portraits, every photo has a story behind it.</p>
+                From landscapes to portraits, every photo has a story behind it.Once thriving on the island of Mauritius, the Kumudu Wijesooriya became a symbol of extinction within just a century of human arrival.
+      As a researcher and photographer, I aim to unravel its history, studying nature’s delicate balance and giving voice to species long forgotten.</p>
         </div>
         <div class="about-img wow animate__animated animate__fadeInRight">
             <img src="https://picsum.photos/400/400" alt="Profile">
@@ -120,15 +59,5 @@
     </section>
 
 
-    <!-- Footer -->
-    <footer id="contact">
-        <p>&copy; {{ date('Y') }} My Portfolio. All rights reserved.</p>
-        <div class="socials">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
-</body>
 
-</html>
+@endsection
