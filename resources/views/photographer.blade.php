@@ -8,9 +8,9 @@
 <section class="photographer-intro">
     <div class="intro-text">
         <h2>Research Meets Photography</h2>
+        <img src="{{ asset('img/profile.jpeg') }}" alt="Profile" style="width:100%; display:block; transition: transform 0.5s; border-radius:20px;width:350px;height: auto;margin:20px auto; ">
         <p>
-            My work blends scientific exploration with the art of photography.
-            Each image is not just a visual, but a record of biodiversity, a reflection of conservation, and a voice for the voiceless.
+            I began wildlife photography in 2014 in England as a bird photographer, inspired by Chamara Sugathsiri. Since 2018 I have focused on macrophotography, documenting rare and elusive animals throughout Sri Lanka. My field expeditions and images capture the island’s diverse habitats and species, helping to showcase hidden biodiversity and promote conservation awareness.
         </p>
     </div>
 </section>
